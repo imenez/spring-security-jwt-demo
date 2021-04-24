@@ -29,7 +29,7 @@ public class HelloResource {
     private JwtUtil jwtUtil;
 
     @Autowired
-    private MynetFetchStocksUtil sahibindenModelMarkaUtil;
+    private MynetFetchStocksUtil mynetFetchStocksUtil;
 
 
 
@@ -63,7 +63,7 @@ public class HelloResource {
     @GetMapping("/getStocks")
     public List<String> getStocks(){
 
-        return sahibindenModelMarkaUtil.getStocks();
+        return mynetFetchStocksUtil.getStocks();
     }
 
 }
